@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_bignum
+
+import std::io
+use ltl_bignum as lib
+
+fn main() {
+    io::println("ltl_bignum demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
